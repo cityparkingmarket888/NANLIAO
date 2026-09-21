@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>新竹南寮漁港導覽地圖</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      background: #4d9999;
+    }
+    .map {
+      position: relative;
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      line-height: 0;
+    }
+    .map > img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+    .hotspot {
+      position: absolute;
+      display: block;
+      z-index: 2;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      background: transparent;
+      border: 0;
+      text-decoration: none;
+    }
+
+    /* 以原圖 1080 x 1770 的百分比座標定位，縮放時會一起等比例縮放 */
+    .fish-scale-stairs { left: 4.5%; top: 4.6%; width: 25%; height: 16%; }
+    .kite-field        { left: 27%;  top: 18%;  width: 27%; height: 18%; }
+    .old-harbor        { left: 56%;  top: 18%;  width: 36%; height: 18%; }
+    .wave-market       { left: 11%;  top: 31%;  width: 29%; height: 17%; }
+    .fish-market       { left: 2%;   top: 43%;  width: 32%; height: 20%; }
+    .visitor-center    { left: 53%;  top: 31%;  width: 29%; height: 19%; }
+    .sports-park       { left: 72%;  top: 70%;  width: 27%; height: 20%; }
+
+    @media (min-width: 1081px) {
+      body { overflow-x: hidden; }
+    }
+  </style>
+</head>
+<body>
+  <main class="map">
+    <img src="guide.jpg" width="1080" height="1770" alt="新竹南寮漁港導覽地圖" draggable="false" />
+
+    <a class="hotspot fish-scale-stairs" href="https://maps.app.goo.gl/dvitJk6Xx96zTCsDA" target="_blank" rel="noopener noreferrer" aria-label="魚鱗天梯"></a>
+    <a class="hotspot kite-field" href="https://maps.app.goo.gl/HcZoNPoFHGzEBVWb8" target="_blank" rel="noopener noreferrer" aria-label="國際風箏賽場"></a>
+    <a class="hotspot old-harbor" href="https://maps.app.goo.gl/UR4tVYCFb94jN7wAA" target="_blank" rel="noopener noreferrer" aria-label="南寮舊漁港"></a>
+    <a class="hotspot wave-market" href="https://maps.app.goo.gl/XpD1GERqngPfPfCTA" target="_blank" rel="noopener noreferrer" aria-label="波光市集"></a>
+    <a class="hotspot fish-market" href="https://maps.app.goo.gl/fAcrymmhQizz3zgf6" target="_blank" rel="noopener noreferrer" aria-label="漁產品直銷中心"></a>
+    <a class="hotspot visitor-center" href="https://maps.app.goo.gl/tAHmcHBe15phwJj39" target="_blank" rel="noopener noreferrer" aria-label="新竹漁港遊客服務中心"></a>
+    <a class="hotspot sports-park" href="https://maps.app.goo.gl/hkpseBtLuGdiBcap7" target="_blank" rel="noopener noreferrer" aria-label="南寮運動公園"></a>
+  </main>
+</body>
+</html>
